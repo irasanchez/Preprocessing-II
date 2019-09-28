@@ -18,6 +18,10 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -27,6 +31,15 @@
       img {
         border-radius: 10px;
       }
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    @media @mobile {
+      width: 100%;
+      flex-direction: column;
     }
   }
 
@@ -43,6 +56,10 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -51,6 +68,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+      width: 100%;
     }
   }
 
@@ -66,7 +87,21 @@
 
       .btn {
         .button-style(grab, 100%);
+        @media @mobile {
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    @media @mobile {
+      flex-direction: column;
     }
   }
 } // home
