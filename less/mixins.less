@@ -1,1 +1,13 @@
 // Mixins in here
+
+.button-style(@cursor, @width) {
+  background-color: @button-bg;
+  width: @width;
+  padding: 5px 10%;
+  text-align: center;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: @cursor;
+  }
+}
